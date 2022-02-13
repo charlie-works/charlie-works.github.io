@@ -1,27 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/bootstrap-dark.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Stylish Portfolio - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Charlie Works</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-left">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-4">
+                  <img src="assets/img/charlie.png" class="img-fluid">
+                </div>
 
-<div class="container">
-  <h1>My second Bootstrap Page</h1>
-  <p>This is some text.</p>
-</div>
+                <div class="col-5">
+                    <h1>Charlie Co</h1>
+                    <h3><em>Motivator, Learner, and a<br>Good Friend</em></h3>
+                    <a class="btn btn-primary btn-xl" href="#services">Find Out More</a>
+                </div>      
+            </div>
+          </div>
+        </header>
 
-</body>
-<script>
-  document.write(
-    '<script src="http://' +
-      (location.host || '${1:localhost}').split(':')[0] +
-      ':${2:35729}/livereload.js?snipver=1"></' +
-      'script>'
-  );
-</script>
+        <!-- Services-->
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary mb-0">Services</h3>
+                    <h2 class="mb-5">What We Offer</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                        <h4><strong>Responsive</strong></h4>
+                        <p class="text-faded mb-0">Looks great on any screen size!</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                        <h4><strong>Redesigned</strong></h4>
+                        <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                        <h4><strong>Favorited</strong></h4>
+                        <p class="text-faded mb-0">
+                            Millions of users
+                            <i class="fas fa-heart"></i>
+                            Start Bootstrap!
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                        <h4><strong>Question</strong></h4>
+                        <p class="text-faded mb-0">I mustache you a question...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container px-4 px-lg-5 text-center py-5">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary pt-5 mb-0">Portfolio</h3>
+                    <h2 class="text-white mb-5">My Math, Science, Blender, and Coding Videos</h2>
+                </div>
+                <div class="grid2">
+                    <div class="griditem">
+                        <div class="content">
+                            <div class="title">Volume of Pyramids <br> and Cones</div>
+                            <a href="https://www.youtube.com/watch?v=rqY4okwR4Fk&ab_channel=Charlie"
+                            target="_blank" rel="noopener noreferrer">
+                                <img src="assets/img/pf_khan.jpg">
+                                <div class="desc">An entirely geometric derivation of the volume
+                                    formulas for pyramids and cones that offers insight to the origin of 
+                                    the 1/3 prefactor.  This was also my entry to the Khan Academy Junior Breakthrough
+                                    Challenge.
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="griditem">
+                        <div class="content">
+                            <div class="title">Deriving Rotation Matrices <br> and Python Implementation</div>
+                            <a href="https://www.youtube.com/watch?v=2i3mFA53mr0&ab_channel=Charlie"
+                            target="_blank" rel="noopener noreferrer">
+                                <img src="assets/img/pf_rotation_matrix1.jpg">
+                                <img src="assets/img/pf_rotation_matrix2.jpg">
+                                <div class="desc">The rotation matrices are derived here via rotation 
+                                    of the x and y cartesian coordinates and using trigonometric
+                                    relations to determine the coordinates of a point in the new rotated x' 
+                                    and y' coordinates.
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="griditem">
+                        <div class="content">
+                            <div class="title">Nitty Gritty Details <br> of Image Rotations</div>
+                            <a href="https://www.youtube.com/watch?v=hU_2pZxmQVU&ab_channel=Charlie"
+                            target="_blank" rel="noopener noreferrer">
+                                <img src="assets/img/pf_rotation_images1.jpg">
+                                <img src="assets/img/pf_rotation_images2.jpg">
+                                <div class="desc">Using the rotation matrices derived earlier, I go through the
+                                    nitty gritty details of writing Python code, without using image processing 
+                                    packages, to rotate an image of my dad and me pixel by pixel.
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action-->
+        <section class="content-section bg-primary text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+            </div>
+        </section>
+        <!-- Map-->
+        <div class="map" id="contact">
+            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <br />
+            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
+        </div>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; Your Website 2021</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+    </body>
 </html>
