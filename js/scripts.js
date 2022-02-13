@@ -39,33 +39,15 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     }
 
-    function resizeGridItem(item){
-        grid = document.getElementsByClassName("grid2")[0];
-        rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-        rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-        rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
-        item.style.gridRowEnd = "span "+rowSpan;
-      }
+
       
-      function resizeAllGridItems(){
-        allItems = document.getElementsByClassName("griditem");
-        for(x=0;x<allItems.length;x++){
-          resizeGridItem(allItems[x]);
-        }
-      }
-      
-      function resizeInstance(instance){
-          item = instance.elements[0];
-        resizeGridItem(item);
-      }
-      
-      window.onload = resizeAllGridItems();
-      window.addEventListener("resize", resizeAllGridItems);
-      
-      allItems = document.getElementsByClassName("griditem");
-      for(x=0;x<allItems.length;x++){
+    window.onload = resizeAllGridItems();
+    window.addEventListener("resize", resizeAllGridItems);
+    
+    allItems = document.getElementsByClassName("griditem");
+    for(x=0;x<allItems.length;x++){
         imagesLoaded( allItems[x], resizeInstance);
-      }
+    }
     // Scroll to top button appear
     document.addEventListener('scroll', () => {
         const scrollToTop = document.body.querySelector('.scroll-to-top');
@@ -82,6 +64,27 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     })
 })
+
+function resizeGridItem(item){
+    grid = document.getElementsByClassName("grid2")[0];
+    rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+    rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+    rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+    item.style.gridRowEnd = "span "+rowSpan;
+  }
+  
+function resizeAllGridItems(){
+    allItems = document.getElementsByClassName("griditem");
+    for(x=0;x<allItems.length;x++){
+        resizeGridItem(allItems[x]);
+    }
+}
+  
+function resizeInstance(instance){
+    item = instance.elements[0];
+    resizeGridItem(item);
+}
+
 
 function fadeOut(el) {
     el.style.opacity = 1;
