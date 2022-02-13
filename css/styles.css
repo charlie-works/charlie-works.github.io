@@ -4574,7 +4574,7 @@ h4.card-text{
 }
 
 .card-text {
-  line-height: 2em;
+  margin-bottom: 1em;
 }
 
 .card-text:last-child {
