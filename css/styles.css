@@ -3028,6 +3028,21 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
+.btn-custom {
+  color: #222;
+  background-color: hsl(190, 0%, 90%);
+  border-radius: 10px;
+  box-shadow:  3px 3px 10px hsl(190, 0%, 20%), -2px -2px 10px hsl(190, 0%, 100%);
+}
+.btn-custom:hover {
+  box-shadow:  3px 3px 10px hsl(190, 0%, 50%), -2px -2px 10px hsl(190, 0%, 95%);
+}
+
+.btn-custom:focus {
+  box-shadow:  3px 3px 10px hsl(190, 0%, 90%), -2px -2px 10px hsl(190, 0%, 90%);
+}
+
+
 .btn-primary {
   color: #fff;
   background-color: #1D809F;
@@ -4514,9 +4529,7 @@ textarea.form-control-lg {
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 1rem;
 }
 .card > hr {
   margin-right: 0;
@@ -4542,8 +4555,13 @@ textarea.form-control-lg {
 }
 
 .card-body {
+  font-family: "Raleway";
   flex: 1 1 auto;
   padding: 1rem 1rem;
+}
+
+h4.card-text{
+  font-weight: 300;
 }
 
 .card-title {
@@ -4553,6 +4571,10 @@ textarea.form-control-lg {
 .card-subtitle {
   margin-top: -0.25rem;
   margin-bottom: 0;
+}
+
+.card-text {
+  line-height: 2em;
 }
 
 .card-text:last-child {
@@ -11557,8 +11579,8 @@ footer.footer .social-link:hover {
   overflow: hidden;
   max-width: 530px;
   z-index:1;
-}
 
+}
 
 .grid2 .griditem::before {
   position: absolute;
@@ -11578,7 +11600,7 @@ footer.footer .social-link:hover {
 }
 
 .grid2 .title {
-  background-color: #ff9800;
+  background-color: hsl(36, 100%, 50%);
   border-radius: 10px;
   padding: 20px;
   font-size: 1.5em;
