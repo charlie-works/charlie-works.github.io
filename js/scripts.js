@@ -3,6 +3,8 @@
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
 */
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
 window.addEventListener('DOMContentLoaded', event => {
 
     const sidebarWrapper = document.getElementById('sidebar-wrapper');
@@ -38,16 +40,33 @@ window.addEventListener('DOMContentLoaded', event => {
             menuToggleTimes.classList.add('fa-bars');
         }
     }
-
-
+    function resizeGridItem(item){
+        grid = document.getElementsByClassName("grid2")[0];
+        rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+        rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+        rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+          item.style.gridRowEnd = "span "+rowSpan;
+      }
       
-    window.onload = resizeAllGridItems();
-    window.addEventListener("resize", resizeAllGridItems);
-    
-    allItems = document.getElementsByClassName("griditem");
-    for(x=0;x<allItems.length;x++){
+      function resizeAllGridItems(){
+        allItems = document.getElementsByClassName("griditem");
+        for(x=0;x<allItems.length;x++){
+          resizeGridItem(allItems[x]);
+        }
+      }
+      
+      function resizeInstance(instance){
+          item = instance.elements[0];
+        resizeGridItem(item);
+      }
+      imagesLoaded("#portfolio", resizeAllGridItems);  
+    //   window.onload = resizeAllGridItems();
+      window.addEventListener("resize", resizeAllGridItems);
+      
+      allItems = document.getElementsByClassName("griditem");
+      for(x=0;x<allItems.length;x++){
         imagesLoaded( allItems[x], resizeInstance);
-    }
+      }
     // Scroll to top button appear
     document.addEventListener('scroll', () => {
         const scrollToTop = document.body.querySelector('.scroll-to-top');
@@ -64,26 +83,8 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     })
 })
+   
 
-function resizeGridItem(item){
-    grid = document.getElementsByClassName("grid2")[0];
-    rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-    rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-    rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
-    item.style.gridRowEnd = "span "+rowSpan;
-  }
-  
-function resizeAllGridItems(){
-    allItems = document.getElementsByClassName("griditem");
-    for(x=0;x<allItems.length;x++){
-        resizeGridItem(allItems[x]);
-    }
-}
-  
-function resizeInstance(instance){
-    item = instance.elements[0];
-    resizeGridItem(item);
-}
 
 
 function fadeOut(el) {
