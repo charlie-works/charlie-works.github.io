@@ -4564,6 +4564,7 @@ h4.card-text{
   font-weight: 300;
 }
 
+
 .card-title {
   margin-bottom: 0.5rem;
 }
@@ -4661,28 +4662,28 @@ h4.card-text{
     border-left: 0;
   }
   .card-group > .card:not(:last-child) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    /* border-top-right-radius: 0;
+    border-bottom-right-radius: 0; */
   }
   .card-group > .card:not(:last-child) .card-img-top,
 .card-group > .card:not(:last-child) .card-header {
-    border-top-right-radius: 0;
+    /* border-top-right-radius: 0; */
   }
   .card-group > .card:not(:last-child) .card-img-bottom,
 .card-group > .card:not(:last-child) .card-footer {
-    border-bottom-right-radius: 0;
+    /* border-bottom-right-radius: 0; */
   }
   .card-group > .card:not(:first-child) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    /* border-top-left-radius: 0;
+    border-bottom-left-radius: 0; */
   }
   .card-group > .card:not(:first-child) .card-img-top,
 .card-group > .card:not(:first-child) .card-header {
-    border-top-left-radius: 0;
+    /* border-top-left-radius: 0; */
   }
   .card-group > .card:not(:first-child) .card-img-bottom,
 .card-group > .card:not(:first-child) .card-footer {
-    border-bottom-left-radius: 0;
+    /* border-bottom-left-radius: 0; */
   }
 }
 
@@ -11498,7 +11499,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-paper.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11523,6 +11524,12 @@ footer.footer .social-link:hover {
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, rgba(0, 0, 0, 0) 0px);
   }
 
+#contact {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-paper.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 
@@ -11630,4 +11637,13 @@ footer.footer .social-link:hover {
   float: left;
 }
 
+h2.contact {
+  font-family: "Raleway";
+  font-weight: 300;
+  text-align: center;
+  color: #222;
+  background-color: hsl(190, 0%, 90%);
+  border-radius: 10px;
+  box-shadow:  3px 3px 10px hsl(190, 0%, 20%), -2px -2px 10px hsl(190, 0%, 100%);
+}
 
