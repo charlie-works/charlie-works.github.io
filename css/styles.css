@@ -236,7 +236,7 @@ sup {
 
 a {
   color: #1D809F;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: #17667f;
@@ -11577,6 +11577,10 @@ footer.footer .social-link:hover {
   grid-auto-rows: 10px;
 }
 
+.grid2 a {
+    text-decoration: none;
+}
+
 .grid2 .griditem {
   border-radius: 10px;
   background-color: #000000;
@@ -11621,6 +11625,7 @@ footer.footer .social-link:hover {
  }
 
 .grid2 .desc{
+  text-decoration: none;
   text-align: left;
   font-size: 1.2em;
   color: #ffffff;
